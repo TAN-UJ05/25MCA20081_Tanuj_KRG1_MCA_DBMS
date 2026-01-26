@@ -96,6 +96,7 @@ Outputs were verified, noted, and screenshots were taken for record and submissi
 <hr>
 
 🔁 Input / Output Details
+
 Input Provided
 
 SQL queries using SELECT, WHERE, ORDER BY, GROUP BY, and HAVING

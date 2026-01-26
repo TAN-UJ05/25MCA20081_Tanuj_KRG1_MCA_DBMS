@@ -1,12 +1,10 @@
-Worksheet – 2
+Name: TANUJ JOSHI		          	   			                             UID: 25MCA20081
+Branch: MCA General	                                             	   Section/Group: 25MCA_KAR-1
+Semester: II							                                           Date of Performance: 22-01-26
+Subject Name: Technical Training		   	   	                         Subject Code: 25CAP-652
 
-Subject: Technical Training
-Subject Code: 25CAP-652
-Semester: II
-Branch: MCA General
-Name: Tanuj Joshi
-UID: 25MCA20081
-Date of Performance: 22-01-2026
+
+<hr>
 
 📌 Experiment
 
@@ -15,6 +13,8 @@ Implementation of SQL SELECT Queries with Filtering, Sorting, Grouping, and Aggr
 
 Description:
 This experiment focuses on implementing SQL SELECT queries in PostgreSQL to retrieve and analyze data efficiently. The practical demonstrates how filtering, sorting, grouping, and aggregation techniques are used in real-world database applications for reporting and decision-making.
+
+<hr>
 
 🎯 Objective
 
@@ -31,6 +31,8 @@ To apply conditions on aggregated data using the HAVING clause
 To understand the difference between row-level filtering and group-level filtering
 
 To gain practical exposure to SQL queries commonly asked in placement interviews
+
+<hr>
 
 🧪 Practical / Experiment Steps
 
@@ -53,6 +55,8 @@ Calculate aggregate values such as total sales
 Apply conditions on aggregated data using the HAVING clause
 
 Verify and analyze the output obtained
+
+<hr>
 
 ⚙️ Procedure of the Experiment and Screenshots
 
@@ -90,6 +94,8 @@ The HAVING clause was used to filter grouped data based on aggregate conditions.
 
 Outputs were verified, noted, and screenshots were taken for record and submission.
 
+<hr>
+
 🔁 Input / Output Details
 Input Provided
 
@@ -106,6 +112,8 @@ Sorted data in ascending and descending order
 Grouped results showing total sales per product
 
 Refined aggregated results using HAVING conditions
+
+<hr>
 
 📚 Learning Outcome
 

@@ -1,7 +1,10 @@
-Name: TANUJ JOSHI		          	   			                             UID: 25MCA20081
-Branch: MCA General	                                             	   Section/Group: 25MCA_KAR-1
-Semester: II							                                           Date of Performance: 22-01-26
-Subject Name: Technical Training		   	   	                         Subject Code: 25CAP-652
+Name: Tanuj Joshi<br>
+UID: 25MCA20081<br>
+Branch: MCA General<br>
+Semester: II<br>
+Subject: Technical Training<br>
+Subject Code: 25CAP-652<br>
+Date of Performance: 22-01-2026<br>
 
 
 <hr>

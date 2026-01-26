@@ -89,6 +89,7 @@ Outputs were verified and screenshots were taken for record purposes.
 <hr>
 
 🔁 Input / Output Details
+
 Input Provided
 
 SQL DDL commands (CREATE, ALTER, DROP)

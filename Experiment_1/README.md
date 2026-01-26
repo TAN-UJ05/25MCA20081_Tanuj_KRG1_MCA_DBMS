@@ -9,7 +9,7 @@ Subject Code: 25CAP-652<br>
 
 📌 Experiment
 
-Title: Implementation of DDL, DML, DQL, and DCL Commands in PostgreSQL
+Title: Implementation of DDL, DML, DQL, and DCL Commands in PostgreSQL<br>
 Description: This experiment focuses on implementing core SQL commands including Data Definition Language (DDL), Data Manipulation Language (DML), Data Query Language (DQL), and Data Control Language (DCL) in PostgreSQL. The practical demonstrates how database objects are created and modified, how data is inserted and retrieved, and how user access permissions are controlled in a relational database system.
 
 <hr>

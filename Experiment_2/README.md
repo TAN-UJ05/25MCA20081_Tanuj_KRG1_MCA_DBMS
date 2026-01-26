@@ -4,18 +4,14 @@ Branch: MCA General<br>
 Semester: II<br>
 Subject: Technical Training<br>
 Subject Code: 25CAP-652<br>
-Date of Performance: 22-01-2026<br>
 
 
 <hr>
 
 📌 Experiment
 
-Title:
-Implementation of SQL SELECT Queries with Filtering, Sorting, Grouping, and Aggregation in PostgreSQL
-
-Description:
-This experiment focuses on implementing SQL SELECT queries in PostgreSQL to retrieve and analyze data efficiently. The practical demonstrates how filtering, sorting, grouping, and aggregation techniques are used in real-world database applications for reporting and decision-making.
+Title: Implementation of SQL SELECT Queries with Filtering, Sorting, Grouping, and Aggregation in PostgreSQL.<br>
+Description: This experiment focuses on implementing SQL SELECT queries in PostgreSQL to retrieve and analyze data efficiently. The practical demonstrates how filtering, sorting, grouping, and aggregation techniques are used in real-world database applications for reporting and decision-making.
 
 <hr>
 
@@ -119,8 +115,6 @@ Refined aggregated results using HAVING conditions
 <hr>
 
 📚 Learning Outcome
-
-After completing this experiment, the following concepts were clearly understood:
 
 Efficient retrieval of relevant data using filtering conditions
 

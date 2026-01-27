@@ -71,44 +71,44 @@ PostgreSQL client tool (psql / pgAdmin) was opened.
 
 A table named customer_orders was created to store order details such as customer name, product, quantity, price, and order date.
 
-CREATE TABLE customer_orders (
-    order_id SERIAL PRIMARY KEY,
-    customer_name VARCHAR(50),
-    product VARCHAR(50),
-    quantity INT,
-    price NUMERIC(10,2),
-    order_date DATE
+CREATE TABLE customer_orders (<br>
+    order_id SERIAL PRIMARY KEY,<br>
+    customer_name VARCHAR(50),<br>
+    product VARCHAR(50),<br>
+    quantity INT,<br>
+    price NUMERIC(10,2),<br>
+    order_date DATE<br>
 );
 
 Sample data was inserted into the table for analysis.
 
-INSERT INTO customer_orders (customer_name, product, quantity, price, order_date) VALUES
-('Amit', 'Laptop', 1, 55000, '2025-01-10'),
-('Riya', 'Mobile', 2, 30000, '2025-01-12'),
-('Kunal', 'Laptop', 1, 60000, '2025-01-15'),
-('Sneha', 'Tablet', 3, 45000, '2025-01-18'),
-('Rahul', 'Mobile', 1, 20000, '2025-01-20'),
-('Anita', 'Laptop', 2, 110000, '2025-01-22');
+INSERT INTO customer_orders (customer_name, product, quantity, price, order_date) VALUES<br>
+('Amit', 'Laptop', 1, 55000, '2025-01-10'),<br>
+('Riya', 'Mobile', 2, 30000, '2025-01-12'),<br>
+('Kunal', 'Laptop', 1, 60000, '2025-01-15'),<br>
+('Sneha', 'Tablet', 3, 45000, '2025-01-18'),<br>
+('Rahul', 'Mobile', 1, 20000, '2025-01-20'),<br>
+('Anita', 'Laptop', 2, 110000, '2025-01-22');<br>
 
 <img width="882" height="315" alt="Screenshot 2026-01-26 123204" src="https://github.com/user-attachments/assets/f290a49e-5112-4ac0-9c4a-07ec49f9c90e" />
 
 SQL queries were executed to filter records using the WHERE clause.
 
-SELECT * 
-FROM customer_orders
-WHERE price > 30000;
+SELECT *<br>
+FROM customer_orders<br>
+WHERE price > 30000;<br>
 
 <img width="881" height="256" alt="Screenshot 2026-01-26 123537" src="https://github.com/user-attachments/assets/188446fd-c014-4560-84b1-790a2c9f479b" />
 
 Sorting operations were performed using ORDER BY in both ascending and descending order.
 
-SELECT customer_name, product, price
-FROM customer_orders
-ORDER BY price ASC;
+SELECT customer_name, product, price<br>
+FROM customer_orders<br>
+ORDER BY price ASC;<br>
 
-SELECT customer_name, product, price
-FROM customer_orders
-ORDER BY price DESC;
+SELECT customer_name, product, price<br>
+FROM customer_orders<br>
+ORDER BY price DESC;<br>
 
 <img width="566" height="327" alt="Screenshot 2026-01-26 123659" src="https://github.com/user-attachments/assets/2ca5cd7c-3ea6-4e47-8511-272b2ad571ae" />
 
@@ -116,26 +116,26 @@ ORDER BY price DESC;
 
 Multiple-column sorting was implemented to observe priority-based sorting.
 
-SELECT customer_name, product, price
-FROM customer_orders
-ORDER BY product ASC, price DESC;
+SELECT customer_name, product, price<br>
+FROM customer_orders<br>
+ORDER BY product ASC, price DESC;<br>
 
 <img width="562" height="324" alt="Screenshot 2026-01-26 123948" src="https://github.com/user-attachments/assets/8945112f-9961-44a1-8fec-48f40c25a32a" />
 
 Aggregation was performed using the GROUP BY clause to calculate total sales per product.
 
-SELECT product, SUM(price) AS total_sales
-FROM customer_orders
-GROUP BY product;
+SELECT product, SUM(price) AS total_sales<br>
+FROM customer_orders<br>
+GROUP BY product;<br>
 
 <img width="411" height="230" alt="Screenshot 2026-01-26 124056" src="https://github.com/user-attachments/assets/57c6aa92-5168-4d86-93eb-c07a33330634" />
 
 The HAVING clause was used to filter grouped data based on aggregate conditions.
 
-SELECT product, SUM(price) AS total_sales
-FROM customer_orders
-GROUP BY product
-HAVING SUM(price) > 50000;
+SELECT product, SUM(price) AS total_sales<br>
+FROM customer_orders<br>
+GROUP BY product<br>
+HAVING SUM(price) > 50000;<br>
 
 <img width="412" height="168" alt="Screenshot 2026-01-26 124134" src="https://github.com/user-attachments/assets/410707a2-9351-485a-93af-d8d61b6f24bf" />
 

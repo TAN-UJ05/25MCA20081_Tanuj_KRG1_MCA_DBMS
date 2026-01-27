@@ -5,7 +5,6 @@ Semester: II<br>
 Subject: Technical Training<br>
 Subject Code: 25CAP-652<br>
 
-
 <hr>
 
 📌 Experiment

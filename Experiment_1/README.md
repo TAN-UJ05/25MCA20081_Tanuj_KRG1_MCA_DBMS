@@ -14,6 +14,12 @@ Description: This experiment focuses on implementing core SQL commands including
 
 <hr>
 
+🛠️ Tools Used
+
+PostgreSQL — Powerful open-source relational database for storing and managing data efficiently
+
+<hr>
+
 🎯 Objective
 
 The objectives of this experiment are:

@@ -69,7 +69,6 @@ CREATE TABLE schema_violations (<br>
     violation_count INT<br>
 );
 
-
 Sample records were inserted into the table.
 
 INSERT INTO schema_violations (schema_name, violation_count) VALUES<br>
@@ -79,6 +78,7 @@ INSERT INTO schema_violations (schema_name, violation_count) VALUES<br>
 ('Inventory', 10),<br>
 ('Admin', 1);
 
+<img width="500" height="292" alt="Screenshot 2026-01-27 201246" src="https://github.com/user-attachments/assets/0d9b99fc-511f-4945-84e7-8d7366e3489e" />
 
 Schema records were classified using a CASE expression.
 
@@ -93,6 +93,7 @@ SELECT <br>
     END AS violation_status<br>
 FROM schema_violations;
 
+<img width="529" height="290" alt="Screenshot 2026-01-27 201459" src="https://github.com/user-attachments/assets/cea560cc-d2ac-485d-a4f8-8646168d4761" />
 
 A new column was added and approval status was updated using CASE logic.
 
@@ -107,6 +108,7 @@ SET approval_status =<br>
         ELSE 'Rejected'<br>
     END;
 
+<img width="687" height="288" alt="Screenshot 2026-01-27 201731" src="https://github.com/user-attachments/assets/cc772666-11e7-4268-9936-ca3ba3ba7d0b" />
 
 IF–ELSE logic was implemented using a PL/pgSQL DO block.
 
@@ -124,6 +126,8 @@ BEGIN<br>
         RAISE NOTICE 'Critical violations detected.';<br>
     END IF;<br>
 END $$;
+
+<img width="389" height="143" alt="Screenshot 2026-01-27 210526" src="https://github.com/user-attachments/assets/942223fa-6727-42ac-bb2e-31df557ab370" />
 
 
 A student table was created and grades were assigned using CASE expressions.
@@ -152,6 +156,7 @@ SELECT<br>
     END AS grade<br>
 FROM students;
 
+<img width="419" height="296" alt="Screenshot 2026-01-27 210733" src="https://github.com/user-attachments/assets/74cf0644-2ada-45fd-bac8-8c4ebb35fe5e" />
 
 Custom sorting was applied using CASE in ORDER BY clause.
 
@@ -167,6 +172,8 @@ ORDER BY<br>
         WHEN violation_count BETWEEN 4 AND 7 THEN 3<br>
         ELSE 4<br>
     END;
+
+<img width="573" height="300" alt="Screenshot 2026-01-27 210908" src="https://github.com/user-attachments/assets/9fff2e9c-d6de-4927-b745-ae23f41d9ea3" />
 
 Outputs were verified and screenshots were taken for record purposes.
 

@@ -168,9 +168,9 @@ ORDER BY<br>
         ELSE 4<br>
     END;
 
-<hr>
-
 Outputs were verified and screenshots were taken for record purposes.
+
+<hr>
 
 🔁 Input / Output Details
 

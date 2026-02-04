@@ -8,6 +8,7 @@ Subject Code: 25CAP-652<br>
 <hr>
 
 📌 Experiment
+
 Title: Implementation of Iterative Control Structures using FOR, WHILE, and LOOP in PostgreSQL.<br>
 Description: This worksheet focuses on understanding and implementing iterative control structures in PostgreSQL using PL/pgSQL. The practical demonstrates how FOR, WHILE, and LOOP constructs are used to perform repetitive tasks such as row-by-row processing, conditional execution, and batch updates. These concepts are widely used in real-world database applications like payroll systems, reporting modules, and enterprise-level data processing.
 

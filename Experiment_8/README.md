@@ -5,14 +5,20 @@ Semester: II<br>
 Subject: Technical Training<br>
 Subject Code: 25CAP-652
 
+<hr>
+
 📌 Experiment
 
 Title: Implementation and Analysis of Stored Procedures for Efficient and Secure Database Operations in PostgreSQL.<br>
 Description: This experiment focuses on the implementation of Stored Procedures in PostgreSQL to perform various database operations such as insertion, updating, deletion, and retrieval of data. Stored procedures are precompiled SQL blocks that improve performance, enhance security, and promote code reusability. The practical demonstrates how business logic can be embedded inside the database layer, reducing redundancy and ensuring consistency. These techniques are widely used in enterprise applications such as banking systems, inventory management, payroll systems, and transaction processing systems where secure and efficient data handling is required.
 
+<hr>
+
 🛠️ Tools Used
 
 PostgreSQL — Open-source relational database system<br>
+
+<hr>
 
 🎯 Objective
 
@@ -27,6 +33,8 @@ To improve database performance using precompiled SQL code
 To ensure data security and controlled access
 
 To enable code reusability within the database system
+
+<hr>
 
 🧪 Practical / Experiment Steps
 
@@ -43,6 +51,8 @@ Create stored procedures for deleting records
 Execute procedures and verify outputs
 
 Analyze performance and security benefits
+
+<hr>
 
 ⚙️ Procedure of the Experiment and Screenshots
 
@@ -124,6 +134,8 @@ All procedures were executed successfully and outputs were verified.
 
 Screenshots were captured for documentation and submission.
 
+<hr>
+
 🔁 Input / Output Details
 
 Input Provided
@@ -141,6 +153,8 @@ New employee records inserted
 Updated salary details
 
 Deleted employee records
+
+<hr>
 
 📚 Learning Outcome
 

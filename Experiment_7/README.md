@@ -66,90 +66,95 @@ PostgreSQL client tool (psql / pgAdmin) was opened.
 
 Tables named Departments, Students, Courses, and Enrollments were created.
 
-CREATE TABLE Departments (
-    DeptID SERIAL PRIMARY KEY,
-    DeptName VARCHAR(50)
+CREATE TABLE Departments (<br>
+    DeptID SERIAL PRIMARY KEY,<br>
+    DeptName VARCHAR(50)<br>
 );
 
-CREATE TABLE Students (
-    StudentID SERIAL PRIMARY KEY,
-    StudentName VARCHAR(50),
-    DeptID INT REFERENCES Departments(DeptID)
+CREATE TABLE Students (<br>
+    StudentID SERIAL PRIMARY KEY,<br>
+    StudentName VARCHAR(50),<br>
+    DeptID INT REFERENCES Departments(DeptID)<br>
 );
 
-CREATE TABLE Courses (
-    CourseID SERIAL PRIMARY KEY,
-    CourseName VARCHAR(50)
+CREATE TABLE Courses (<br>
+    CourseID SERIAL PRIMARY KEY,<br>
+    CourseName VARCHAR(50)<br>
 );
 
-CREATE TABLE Enrollments (
-    EnrollID SERIAL PRIMARY KEY,
-    StudentID INT REFERENCES Students(StudentID),
-    CourseID INT REFERENCES Courses(CourseID)
+CREATE TABLE Enrollments (<br>
+    EnrollID SERIAL PRIMARY KEY,<br>
+    StudentID INT REFERENCES Students(StudentID),<br>
+    CourseID INT REFERENCES Courses(CourseID)<br>
 );
 
 Sample records were inserted into the tables.
 
-INSERT INTO Departments (DeptName) VALUES
-('Computer Science'),
-('Management'),
+INSERT INTO Departments (DeptName) VALUES<br>
+('Computer Science'),<br>
+('Management'),<br>
 ('Commerce');
 
-INSERT INTO Students (StudentName, DeptID) VALUES
-('Amit', 1),
-('Riya', 2),
-('Kunal', 1),
-('Sneha', 3),
+INSERT INTO Students (StudentName, DeptID) VALUES<br>
+('Amit', 1),<br>
+('Riya', 2),<br>
+('Kunal', 1),<br>
+('Sneha', 3),<br>
 ('Rahul', 2);
 
-INSERT INTO Courses (CourseName) VALUES
-('DBMS'),
-('Java'),
-('Accounting'),
+INSERT INTO Courses (CourseName) VALUES<br>
+('DBMS'),<br>
+('Java'),<br>
+('Accounting'),<br>
 ('Marketing');
 
-INSERT INTO Enrollments (StudentID, CourseID) VALUES
-(1,1),
-(1,2),
-(2,4),
-(3,1),
+INSERT INTO Enrollments (StudentID, CourseID) VALUES<br>
+(1,1),<br>
+(1,2),<br>
+(2,4),<br>
+(3,1),<br>
 (4,3);
 
 INNER JOIN (Students with Enrolled Courses)
-SELECT s.StudentName, c.CourseName
-FROM Students s
-INNER JOIN Enrollments e ON s.StudentID = e.StudentID
+
+SELECT s.StudentName, c.CourseName<br>
+FROM Students s<br>
+INNER JOIN Enrollments e ON s.StudentID = e.StudentID<br>
 INNER JOIN Courses c ON e.CourseID = c.CourseID;
 
 <img width="457" height="323" alt="Screenshot 2026-04-07 115007" src="https://github.com/user-attachments/assets/d1ae3d71-0839-4179-a767-a8b984209277" />
 
 LEFT JOIN (Students not Enrolled in Any Course)
-SELECT s.StudentName
-FROM Students s
-LEFT JOIN Enrollments e ON s.StudentID = e.StudentID
+
+SELECT s.StudentName<br>
+FROM Students s<br>
+LEFT JOIN Enrollments e ON s.StudentID = e.StudentID<br>
 WHERE e.StudentID IS NULL;
 
 <img width="458" height="201" alt="Screenshot 2026-04-07 115133" src="https://github.com/user-attachments/assets/2dae94e8-a5ef-4458-b1c8-440c0b1ee232" />
 
 RIGHT JOIN (All Courses with or without Students)
-SELECT c.CourseName, s.StudentName
-FROM Enrollments e
-RIGHT JOIN Courses c ON e.CourseID = c.CourseID
+
+SELECT c.CourseName, s.StudentName<br>
+FROM Enrollments e<br>
+RIGHT JOIN Courses c ON e.CourseID = c.CourseID<br>
 LEFT JOIN Students s ON e.StudentID = s.StudentID;
 
 <img width="637" height="331" alt="Screenshot 2026-04-07 115227" src="https://github.com/user-attachments/assets/71eba24a-a5f6-43e8-a86a-2f5db9165a16" />
 
 JOIN (Students with Department Info)
-SELECT s.StudentName, d.DeptName
-FROM Students s
+
+SELECT s.StudentName, d.DeptName<br>
+FROM Students s<br>
 JOIN Departments d ON s.DeptID = d.DeptID;
 
 <img width="457" height="325" alt="Screenshot 2026-04-07 115322" src="https://github.com/user-attachments/assets/80fe8f2e-17df-42f6-bd03-6e22e6528232" />
 
 CROSS JOIN (All Possible Combinations)
-SELECT s.StudentName, c.CourseName
-FROM Students s
-CROSS JOIN Courses c;
+
+SELECT s.StudentName, c.CourseName<br>
+FROM Students s<br>
+CROSS JOIN Courses c;<br>
 
 <img width="468" height="361" alt="Screenshot 2026-04-07 115417" src="https://github.com/user-attachments/assets/91e8a9f8-0671-4918-a825-1963f8a21eeb" />
 

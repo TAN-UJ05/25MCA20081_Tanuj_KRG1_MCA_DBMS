@@ -5,14 +5,20 @@ Semester: II<br>
 Subject: Technical Training<br>
 Subject Code: 25CAP-652
 
+<hr>
+
 📌 Experiment
 
 Title: Implementation and Analysis of Database Triggers for Automated Calculations and Data Integrity in PostgreSQL.<br>
 Description: This experiment focuses on the implementation of database triggers in PostgreSQL to automate operations during data insertion. Triggers are special functions that execute automatically in response to specific events such as INSERT, UPDATE, or DELETE. In this practical, a trigger is used to automatically calculate the bonus of employees based on their salary at the time of insertion. This reduces manual effort, ensures data consistency, and enforces business rules at the database level. Triggers are widely used in real-world applications such as auditing systems, banking applications, payroll systems, and inventory management where automatic validation and calculations are required.
 
+<hr>
+
 🛠️ Tools Used
 
 PostgreSQL — Open-source relational database system
+
+<hr>
 
 🎯 Objective
 
@@ -28,6 +34,8 @@ To perform automatic calculations using triggers
 
 To reduce manual intervention in database systems
 
+<hr>
+
 🧪 Practical / Experiment Steps
 
 Identify operations to be automated using triggers
@@ -41,6 +49,8 @@ Create a trigger linked with the table
 Insert records to test trigger execution
 
 Verify output and analyze results
+
+<hr>
 
 ⚙️ Procedure of the Experiment and Screenshots
 
@@ -90,6 +100,8 @@ All operations were executed successfully and outputs were verified.
 
 Screenshots were captured for documentation and submission.
 
+<hr>
+
 🔁 Input / Output Details
 
 Input Provided
@@ -109,6 +121,8 @@ Automatic calculation of bonus (10% of salary)
 Inserted records with computed bonus values
 
 Maintained data consistency and integrity
+
+<hr>
 
 📚 Learning Outcome
 
